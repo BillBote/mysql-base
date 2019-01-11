@@ -29,7 +29,7 @@ see data in database: SHOW tables;
 
 see specific columns: SHOW COLUMNS FROM table(name);
 
-## 3. Index--order SELECT
+## 3. Index--SELECT
 Order Select choose specific columns from tables, like SELECT columnname FROM tablename. This is quite obvious and simple. Orders below:
 
 select one column: SELECT column-name FROM table-name;
@@ -39,5 +39,16 @@ select multiple columns: SELECT column-name1,column-name2,... FROM table-name;
 select all columns: SELECT * FROM table-name;
 
 select columns with different row values(all rows with unique values): SELECT DISTINCT column-name FROM table-name;
+
+select columns and output limited amount of results: SELECT column-name FROM table-name LIMIT num;
+
+select columns and output num2 results start from index num1: SELECT column-name FROM table-name LIMIT num1,num2; or SELECT column-name FROM table-name LIMIT num2 OFFSET num1;
+
+fully constrain the column names and table names: SELECT table-name.column-name FROM table-name;
+
+fully constrain the column names and table names: SELECT table-name.coliumn-name FROM database-name.table-name;
+
+## 4. order--ORDER BY
+
 
 
