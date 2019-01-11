@@ -29,5 +29,15 @@ see data in database: SHOW tables;
 
 see specific columns: SHOW COLUMNS FROM table(name);
 
+## 3. Index--order SELECT
+Order Select choose specific columns from tables, like SELECT columnname FROM tablename. This is quite obvious and simple. Orders below:
+
+select one column: SELECT column-name FROM table-name;
+
+select multiple columns: SELECT column-name1,column-name2,... FROM table-name;
+
+select all columns: SELECT * FROM table-name;
+
+select columns with different row values(all rows with unique values): SELECT DISTINCT column-name FROM table-name;
 
 
