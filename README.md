@@ -15,4 +15,19 @@ download MySQL Server: download MySQL Community Server from https://dev.mysql.co
 
 download MySQL Workbench: download MySQL Workbench from https://dev.mysql.com/downloads/workbench/
 
-MySQL Server is the server we put order in  
+MySQL Server is the server we put order in and is the direct window we could operate on. I am a mac user and I use it through terminal.
+
+MySQL Workbench provides DBAs and developers an integrated tools environment. It looks like an IDE and is more convenient to use than Server itself.
+
+MySQL use language SQL and this is a quite simple and easy-understanding language. The most simple and basic ones is those to select and show the database. But first we must understand the structure of databases in MySQL. Data are stored as tables in databases. Thus the following orders are clear. Note that SQL is not case-sensitive and each order should end with ';' or '\g'.
+
+select a database: USE database(name);
+
+see databases: SHOW databases;
+
+see data in database: SHOW tables;
+
+see specific columns: SHOW COLUMNS FROM table(name);
+
+
+
