@@ -49,6 +49,17 @@ fully constrain the column names and table names: SELECT table-name.column-name 
 fully constrain the column names and table names: SELECT table-name.coliumn-name FROM database-name.table-name;
 
 ## 4. order--ORDER BY
+According to last part, select items actually do not follow an order. If we want sort data in a specific way, we need to use clause ORDER BY. I say clause which means ORDER BY is used after SELECT, like the FROM and LIMIT showed before. Of course, clause is very important. 
 
+order by a column: SELECT column-name FROM table-name ORDER BY column-name;
+
+order by multiple columns: SELECT column-name FROM table-name ORDER BY column-name1,column-name2,...;
+
+defult order is ascending order(ASC), to obtain descending order: SELECT column-name FROM table-name ORDER BY column-name DESC; Note that DESC only works on the column just in front it, if you want to obtain multiple descending-order, each column should follow a DESC.
+
+## 5.filter--WHERE
+In order to obtain results under specific condition, we should set filter condition. Clause WHERE is applied after FROM for this purpose.
+
+ In this part, the coditions are likely to those in C++ or other language
 
 
