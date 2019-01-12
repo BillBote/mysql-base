@@ -60,6 +60,20 @@ defult order is ascending order(ASC), to obtain descending order: SELECT column-
 ## 5.filter--WHERE
 In order to obtain results under specific condition, we should set filter condition. Clause WHERE is applied after FROM for this purpose.
 
- In this part, the coditions are likely to those in C++ or other language
+In this part, the coditions are likely to those in C++ or other language and is very flexible and easy to use. It is hard to summarize the orders thus I show some examples.
+
+check single value: SELECT column-name FROM table-name WHERE column-name = value;(here take '=' as an example, other operators also satisfy)
+
+not match: SELECT column-name FROM table-name WHERE column-name <> value;(<> means not match)
+
+check intervals: SELECT column-name FROM table-name WHERE column-name BETWEEN value1 and value2;
+
+check NULL: SELECT column-name FROM table-name WHERE column-name IS NULL;
+
+
+
+
+
+
 
 
