@@ -57,7 +57,7 @@ order by multiple columns: SELECT column-name FROM table-name ORDER BY column-na
 
 defult order is ascending order(ASC), to obtain descending order: SELECT column-name FROM table-name ORDER BY column-name DESC; Note that DESC only works on the column just in front it, if you want to obtain multiple descending-order, each column should follow a DESC.
 
-## 5.filter--WHERE
+## 5.filter 1--WHERE
 In order to obtain results under specific condition, we should set filter condition. Clause WHERE is applied after FROM for this purpose.
 
 In this part, the coditions are likely to those in C++ or other language and is very flexible and easy to use. It is hard to summarize the orders thus I show some examples.
@@ -69,6 +69,17 @@ not match: SELECT column-name FROM table-name WHERE column-name <> value;(<> mea
 check intervals: SELECT column-name FROM table-name WHERE column-name BETWEEN value1 and value2;
 
 check NULL: SELECT column-name FROM table-name WHERE column-name IS NULL;
+
+## 6. filter 2--WHERE clause
+In this part, we combine simple mathematical operators with some logical operators like AND,OR.
+
+AND: SELECT column-name FROM table-name WHERE condition1 AND condition2;
+
+OR: SELECT column-name FROM table-name WHERE condition1 OR condition2;
+
+AND and OR: divided by ();
+
+IN: SELECT column-name FROM table-name WHERE column-name IN interval;
 
 
 
