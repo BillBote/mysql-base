@@ -79,7 +79,21 @@ OR: SELECT column-name FROM table-name WHERE condition1 OR condition2;
 
 AND and OR: divided by ();
 
-IN: SELECT column-name FROM table-name WHERE column-name IN interval;
+IN: SELECT column-name FROM table-name WHERE column-name IN interval;(note that IN is similar to OR but much faster)
+
+NOT: (NOT reject all the operations behind it) SELECT column-name FROM table-name WHERE NOT condition;
+
+## 7. filter 3--wildcard character
+In the previous parts of filtering, the value we use for filtering is known. For example, we would like to find out the company name whose amount of employees are is more than 100. In this example, 100 is a known value. But for some other examples, the conditions are not as specific as last example, like find the company names containing 'ology'. Thus the simple filtering condition does not work. In this case we should consider wildcard. If you are familiar with regular expression, you would find they are really close.
+
+In order to tell server we are using wildcard, we need to put operator LIKE at first. LIKE is like a symbol of wildcard.
+
+%: match any character for any times;
+
+\_: match any character once;
+
+
+
 
 
 
