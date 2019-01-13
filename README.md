@@ -92,12 +92,13 @@ In order to tell server we are using wildcard, we need to put operator LIKE at f
 
 \_: match any character once;
 
-example: 
+Example: 
 
 SELECT column-name FROM tabe-name LIKE '%ology';
 
 SELECT column-name FROM table-name LIKE '\_ology';
 
+## 9. regular expression
 
 
 
