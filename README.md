@@ -103,9 +103,3 @@ SELECT column-name FROM table-name LIKE '\_ology';
 
 
 
-
-
-
-
-
-
