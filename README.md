@@ -99,7 +99,9 @@ SELECT column-name FROM tabe-name LIKE '%ology';
 SELECT column-name FROM table-name LIKE '\_ology';
 
 ## 9. regular expression
+Regular expression is very important in matching text. Regular expression is widely used in many areas and like another language, it has a complete rule. Since whole rules for regular expression are not the critical point in this chapter, we leave them to yourselves. Only usage in MySQL is included. Regular expression is quite easy in MySQL. Begin with REGEXP, you could put expressiond behind it.
 
+In previous part, wildcard beginning with LIKE was introduced. Since LIKE could match patterns, why regular expression is introduced? There exists an important difference. LIKE matches the whole column, which means the expression behind LIKE should be a value in a column. However, REGEXP matches values, which means the expression behind REGEXP could appear in the value.
 
 
 
