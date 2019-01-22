@@ -103,5 +103,7 @@ Regular expression is very important in matching text. Regular expression is wid
 
 In previous part, wildcard beginning with LIKE was introduced. Since LIKE could match patterns, why regular expression is introduced? There exists an important difference. LIKE matches the whole column, which means the expression behind LIKE should be a value in a column. However, REGEXP matches values, which means the expression behind REGEXP could appear in the value.
 
+We would ignore the grammar part of regular expression.
 
+## 10. 
 
